@@ -7,9 +7,14 @@ function addMoneyNoakhali() {
     alert("Invalid Input or Insufficient Balance");
     return;
   }
+  document.getElementById("cityName").innerHTML = "Noakhali";
+  document.getElementById("my_modal_1").showModal();
+
   var ans = addSum(totalAmountNoakhali, amountN, myBalance);
   document.getElementById("totalAmountNoakhali").innerHTML = ans.totalAmount;
   document.getElementById("myBalance").innerHTML = ans.myBalance;
+  var textadd = `${amountN} Donate for Flood at Noakhali, Bangladesh`;
+  history(textadd);
 }
 
 document
