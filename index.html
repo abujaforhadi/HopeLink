@@ -9,8 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="google-site-verification" content="Q_M1tObefGIakrbGTt2KkAub6qpcq_O4-cvRGcJkJyk" />
-
+   
 </head>
 
 <body class=" font-lexend bg-[#F9F7F3] text-[#111111]">
@@ -37,17 +36,17 @@
             </div>
             <div class="navbar-end flex items-center font-medium">
                 <img src="assets/img/coin.png" alt="Coin" class="w-6 h-6 mr-2" />
-                <p id="totalMoney" class="mr-1">15000</p>BDT
+                <p id="myBalance" class="mr-1">15000</p>BDT
             </div>
         </div>
         <div class="flex justify-center gap-5 pb-4">
-            <button id="donationBtn" class="btn rounded-lg bg-white">Donation</button>
-            <button id="historyBtn" class="btn rounded-lg bg-white">History</button>
+            <button id="donationBtn" class=" btn btn-outline rounded-lg ">Donation</button>
+            <button id="historyBtn" class="btn btn-outline rounded-lg ">History</button>
         </div>
     </nav>
 
     <main class="bg-white pt-7">
-        <section id="DonatePage" class=" grid gap-5 px-32 py-4">
+        <section id="DonatePage" class="hidden grid gap-5 px-32 py-4">
             <div id="noakhali" class="card lg:card-side  border ">
 
                 <div class="flex-1">
@@ -143,7 +142,7 @@
             </div>
 
         </section>
-        <section class="hidden grid gap-5 px-32 py-4">
+        <section id="histroyPage" class="hidden grid gap-5 px-32 py-4">
             <div class="border p-8 rounded-2xl">
                 <h2>96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
                 <h6>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time</h6>
