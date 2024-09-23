@@ -1,6 +1,7 @@
 function findInputValue(id){
     var id=document.getElementById(id).value;
-    id=parseFloat(id);
+    
+    id=Number(id);
     
     return id;
 
