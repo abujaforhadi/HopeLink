@@ -16,6 +16,7 @@ function addMoneyNoakhali() {
   var titleN=findElementText("titleN");
   var textadd = `${amountN} Taka is ${titleN} `; //amountN+ "Taka is"+ titleN same as this
   history(textadd);
+  document.getElementById("amountN").value = "";
 }
 
 document

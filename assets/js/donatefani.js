@@ -18,6 +18,7 @@ function addMoneyFani() {
   var titleF=findElementText("titleF");
   var textadd = `${amountF} Taka is ${titleF} `; //amountF +" Taka is "+ titleF  same as this
   history(textadd);
+  document.getElementById("amountF").value = "";
 }
 
 document.getElementById("donationFaniBtn").addEventListener("click", addMoneyFani);

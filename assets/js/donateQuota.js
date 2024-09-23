@@ -16,6 +16,8 @@ function addMoneyQuota() {
     var titleQ=findElementText("titleQ");
     var textadd =amountQ + " Taka is " + titleQ; //`${amountQ} Taka is ${titleQ} ` same as this
   history(textadd);
+  document.getElementById("amountQ").value = "";
+
   }
   
   document
