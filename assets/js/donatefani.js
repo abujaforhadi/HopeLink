@@ -15,7 +15,8 @@ function addMoneyFani() {
   var ans = addSum(totalAmountFani, amountF, myBalance);
   document.getElementById("totalAmountFani").innerHTML = ans.totalAmount;
   document.getElementById("myBalance").innerHTML = ans.myBalance;
-  var textadd = `${amountF} Donate for Flood Relief in Feni,Bangladesh`;
+  var titleF=findElementText("titleF");
+  var textadd = `${amountF} Taka is ${titleF} `; //amountF +" Taka is "+ titleF  same as this
   history(textadd);
 }
 

@@ -13,7 +13,8 @@ function addMoneyNoakhali() {
   var ans = addSum(totalAmountNoakhali, amountN, myBalance);
   document.getElementById("totalAmountNoakhali").innerHTML = ans.totalAmount;
   document.getElementById("myBalance").innerHTML = ans.myBalance;
-  var textadd = `${amountN} Donate for Flood at Noakhali, Bangladesh`;
+  var titleN=findElementText("titleN");
+  var textadd = `${amountN} Taka is ${titleN} `; //amountN+ "Taka is"+ titleN same as this
   history(textadd);
 }
 

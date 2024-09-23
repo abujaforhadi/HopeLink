@@ -13,7 +13,8 @@ function addMoneyQuota() {
     var ans = addSum(totalAmountQuota, amountQ, myBalance);
     document.getElementById("totalAmountQuota").innerHTML = ans.totalAmount;
     document.getElementById("myBalance").innerHTML = ans.myBalance;
-    var textadd = `${amountQ} Aid for Injured in the Quota Movement`;
+    var titleQ=findElementText("titleQ");
+    var textadd =amountQ + " Taka is " + titleQ; //`${amountQ} Taka is ${titleQ} ` same as this
   history(textadd);
   }
   

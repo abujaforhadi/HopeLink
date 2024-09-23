@@ -11,6 +11,13 @@ function findElementValue(id){
     return id;
 
 }
+function findElementText(id){
+    var id=document.getElementById(id).innerHTML;
+    
+    return id;
+
+}
+
 function addSum(totalAmount, inputAmount, myBalance){
     totalAmount= totalAmount + inputAmount;
     myBalance=myBalance-inputAmount;
